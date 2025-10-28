@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, TrendingUp, Target, Award, Users, CheckCircle } from 'lucide-react';
+import { ArrowRight, TrendingUp, Target, Award, Users, CheckCircle, Brain, Zap } from 'lucide-react';
 import { useEffect } from 'react';
 export default function Home() {
   useEffect(() => {
@@ -29,17 +29,16 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <div className="inline-block px-4 py-2 bg-orange-500/20 border border-orange-500/30 rounded-full text-orange-400 text-sm font-semibold">
-                Your Success, Our Mission
+                AI-Powered Career Transformation
               </div>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                Transform Your
+                Transform Your Career
                 <span className="block bg-gradient-to-r from-orange-400 to-teal-400 bg-clip-text text-transparent">
-                  Career Today
+                  with AI
                 </span>
               </h1>
               <p className="text-xl text-gray-300 leading-relaxed">
-                Expert career guidance, personalized strategies, and proven results.
-                We help professionals like you land dream jobs and accelerate career growth.
+                You don't have to start over to stay ahead. Learn how AI can enhance your career — not replace it.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link
@@ -100,41 +99,41 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Why Choose CareerPro?
+              Why AI Career Guidance?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We combine industry expertise with personalized strategies to deliver exceptional results
+              Guide your career transformation through AI — aligning your skills, learning, and goals with AI-driven opportunities
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all group">
               <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-4 rounded-xl inline-block mb-6 group-hover:scale-110 transition-transform">
-                <Target className="h-8 w-8 text-white" />
+                <Brain className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Personalized Approach</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">AI-Aligned Career Paths</h3>
               <p className="text-gray-600 leading-relaxed">
-                Every client receives a customized strategy tailored to their unique goals, skills, and industry.
+                Create personalized career paths that fit your strengths and leverage AI technologies to accelerate your growth.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all group">
               <div className="bg-gradient-to-br from-teal-500 to-teal-600 p-4 rounded-xl inline-block mb-6 group-hover:scale-110 transition-transform">
-                <Award className="h-8 w-8 text-white" />
+                <Zap className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Proven Results</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">AI Skills & Tools</h3>
               <p className="text-gray-600 leading-relaxed">
-                Our clients see an average salary increase of 35% and land interviews 3x faster.
+                Master AI platforms and tools to accelerate learning, automate tasks, and boost productivity in your role.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all group">
               <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-4 rounded-xl inline-block mb-6 group-hover:scale-110 transition-transform">
-                <Users className="h-8 w-8 text-white" />
+                <Target className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Expert Guidance</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Future-Ready Leadership</h3>
               <p className="text-gray-600 leading-relaxed">
-                Work with certified career coaches who have helped thousands succeed across all industries.
+                Reposition yourself as a leader by integrating AI into your existing role and building credibility through AI-driven projects.
               </p>
             </div>
           </div>
@@ -156,10 +155,10 @@ export default function Home() {
       {/* Left Side - Process Steps */}
       <div className="grid md:grid-cols-2 gap-6">
         {[
-          { step: '01', title: 'Discovery', desc: 'Understand your goals and current situation' },
-          { step: '02', title: 'Strategy', desc: 'Create a personalized action plan' },
-          { step: '03', title: 'Execution', desc: 'Implement with expert guidance' },
-          { step: '04', title: 'Success', desc: 'Land your dream job and thrive' },
+          { step: '01', title: 'Assessment', desc: 'Identify your skills, gaps, and career goals' },
+          { step: '02', title: 'AI Awareness', desc: 'Understand the impact of AI on your role and industry' },
+          { step: '03', title: 'Career Path Design', desc: 'Build a personalized AI-aligned roadmap' },
+          { step: '04', title: 'Skill Building', desc: 'Curate learning paths, projects, and mentorship' },
         ].map((item) => (
           <div key={item.step} className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:bg-white/15 transition-all">
             <div className="text-5xl font-bold text-orange-500 mb-4">{item.step}</div>
@@ -186,18 +185,18 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-                Ready to Accelerate Your Career?
+                Ready to Future-Proof Your Career?
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Join thousands of successful professionals who have transformed their careers with our expert guidance.
+                Join professionals transforming their careers through AI — without starting over.
               </p>
               <ul className="space-y-4 mb-8">
                 {[
-                  'Get noticed by top employers',
-                  'Master the interview process',
-                  'Negotiate better compensation',
-                  'Navigate career transitions',
-                  'Build a powerful personal brand',
+                  'Create AI-aligned career pathways',
+                  'Master AI tools for productivity',
+                  'Build credibility through AI projects',
+                  'Reposition as an AI-savvy leader',
+                  'Accelerate learning with AI platforms',
                 ].map((item) => (
                   <li key={item} className="flex items-center space-x-3">
                     <CheckCircle className="h-6 w-6 text-orange-500 flex-shrink-0" />
@@ -222,7 +221,7 @@ export default function Home() {
                     <div className="flex text-orange-500">★★★★★</div>
                   </div>
                   <p className="text-gray-600 italic">
-                    "Landed my dream job at Google with a 50% salary increase. The interview coaching was game-changing!"
+                    "The AI career path helped me transition into an AI-enhanced role with 60% salary increase. Game-changing!"
                   </p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-teal-500">
@@ -231,7 +230,7 @@ export default function Home() {
                     <div className="flex text-orange-500">★★★★★</div>
                   </div>
                   <p className="text-gray-600 italic">
-                    "The LinkedIn optimization helped me get 10x more recruiter messages. Absolutely worth it!"
+                    "Learning to leverage AI tools transformed my productivity and opened new career opportunities!"
                   </p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-orange-500">
@@ -240,7 +239,7 @@ export default function Home() {
                     <div className="flex text-orange-500">★★★★★</div>
                   </div>
                   <p className="text-gray-600 italic">
-                    "Professional, knowledgeable, and truly invested in my success. Highly recommend!"
+                    "I repositioned myself as an AI leader without changing careers. The guidance was invaluable!"
                   </p>
                 </div>
               </div>
@@ -252,8 +251,8 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-br from-white via-teal-700 to-orange-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Choose Your Plan</h2>
-            <p className="text-xl text-gray-600">From job seekers to executives - choose a plan that fits your needs</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Choose Your AI Career Path</h2>
+            <p className="text-xl text-gray-600">From explorers to seasoned professionals - transform your career with AI</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -262,25 +261,25 @@ export default function Home() {
               <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-4 rounded-xl inline-block mb-6">
                 <Target className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">Starter</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-2">Explorer</h3>
               <p className="text-4xl font-bold text-slate-900 mb-2">$299</p>
-              <p className="text-gray-600 mb-6">Perfect for job seekers getting started</p>
+              <p className="text-gray-600 mb-6">For freshers exploring AI careers</p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Professional resume review</span>
+                  <span>Career & strengths assessment</span>
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>LinkedIn profile optimization</span>
+                  <span>AI career pathways planning</span>
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>1 mock interview session</span>
+                  <span>AI tools introduction</span>
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Email support</span>
+                  <span>Skills & certifications roadmap</span>
                 </li>
               </ul>
               <a 
@@ -305,31 +304,31 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-2">Professional</h3>
               <p className="text-4xl font-bold text-slate-900 mb-2">$799</p>
-              <p className="text-gray-600 mb-6">For serious career advancement</p>
+              <p className="text-gray-600 mb-6">For seasoned pros advancing with AI</p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Complete resume rewrite</span>
+                  <span>AI awareness & application review</span>
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Cover letter templates</span>
+                  <span>AI accelerators for automation</span>
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>LinkedIn complete optimization</span>
+                  <span>Personalized learning strategy</span>
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>3 mock interview sessions</span>
+                  <span>AI-driven project guidance</span>
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Job search strategy</span>
+                  <span>Personal branding with AI</span>
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Priority support</span>
+                  <span>Ongoing mentorship</span>
                 </li>
               </ul>
               <a 
@@ -347,33 +346,33 @@ export default function Home() {
               <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-4 rounded-xl inline-block mb-6">
                 <Award className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">Executive</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-2">Leader</h3>
               <p className="text-4xl font-bold text-slate-900 mb-2">$1,999</p>
-              <p className="text-gray-600 mb-6">For C-level and senior leaders</p>
+              <p className="text-gray-600 mb-6">For executives becoming AI leaders</p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Executive resume & bio</span>
+                  <span>Strategic AI integration planning</span>
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Personal branding strategy</span>
+                  <span>Leadership repositioning strategy</span>
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Unlimited coaching sessions</span>
+                  <span>AI executive presence building</span>
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Salary negotiation support</span>
+                  <span>Industry visibility & credibility</span>
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>90-day follow-up support</span>
+                  <span>Unlimited 1-on-1 coaching</span>
                 </li>
                 <li className="flex items-start gap-2 text-gray-700">
                   <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Dedicated career coach</span>
+                  <span>90-day transformation support</span>
                 </li>
               </ul>
               <a 

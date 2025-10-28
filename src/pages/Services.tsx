@@ -1,54 +1,54 @@
 import { Link } from 'react-router-dom';
-import { FileText, Linkedin, MessageCircle, TrendingUp, Search, Award, Globe, ArrowRight } from 'lucide-react';
+import { Brain, Zap, Target, TrendingUp, BookOpen, Award, Lightbulb, ArrowRight } from 'lucide-react';
 import { useEffect } from 'react';
 const services = [
   {
-    icon: FileText,
-    title: 'Resume Writing',
-    description: 'Professional, ATS-optimized resumes that get you noticed by recruiters and hiring managers. We highlight your achievements and craft compelling narratives.',
-    features: ['ATS-Optimized Format', 'Achievement-Focused', 'Industry-Specific', 'Unlimited Revisions'],
+    icon: Brain,
+    title: 'AI Career Pathways',
+    description: 'Create personalized AI-aligned career paths that fit your strengths and aspirations. Whether you are a fresher or exploring new opportunities, we help you navigate the AI landscape.',
+    features: ['Strengths Assessment', 'Career Alignment', 'Skills Identification', 'AI Job Opportunities'],
     color: 'from-orange-500 to-orange-600',
   },
   {
-    icon: Linkedin,
-    title: 'LinkedIn Optimization',
-    description: 'Transform your LinkedIn profile into a powerful personal brand that attracts recruiters and opportunities. Increase visibility and engagement.',
-    features: ['SEO-Optimized Profile', 'Compelling Headline', 'Strategic Keywords', 'Engagement Strategy'],
+    icon: Zap,
+    title: 'AI Tools Mastery',
+    description: 'Learn to leverage AI platforms for automation, analytics, and productivity. Accelerate your learning and skill-building with cutting-edge AI technologies.',
+    features: ['AI Platform Training', 'Automation Tools', 'Analytics & Insights', 'Productivity Boosters'],
     color: 'from-teal-500 to-teal-600',
   },
   {
-    icon: MessageCircle,
-    title: 'Interview Coaching',
-    description: 'Master the art of interviewing with personalized coaching, mock interviews, and proven strategies to impress hiring managers.',
-    features: ['Mock Interviews', 'STAR Method Training', 'Body Language Tips', 'Salary Negotiation'],
+    icon: Target,
+    title: 'Skills & Certifications',
+    description: 'Identify key skills and certifications needed for AI-driven jobs. Get a personalized roadmap of valuable credentials that employers are seeking.',
+    features: ['Skill Gap Analysis', 'Certification Roadmap', 'Learning Resources', 'Industry Requirements'],
     color: 'from-orange-500 to-orange-600',
   },
   {
     icon: TrendingUp,
-    title: 'Career Counseling',
-    description: 'Navigate career transitions and find your path with expert guidance. Get clarity on your goals and create actionable plans.',
-    features: ['Career Assessment', 'Goal Setting', 'Skill Gap Analysis', 'Action Planning'],
+    title: 'AI Repositioning for Professionals',
+    description: 'Become future-ready by integrating AI into your existing role. Learn to use AI for automation, analytics, and enhanced decision-making without starting over.',
+    features: ['Role Enhancement', 'AI Integration Strategy', 'Leadership Development', 'Future-Ready Skills'],
     color: 'from-teal-500 to-teal-600',
   },
   {
-    icon: Search,
-    title: 'Job Search Strategy',
-    description: 'Develop a targeted job search strategy that lands interviews faster. Learn where to look, how to apply, and how to stand out.',
-    features: ['Target Company Research', 'Application Strategy', 'Networking Tactics', 'Follow-up Templates'],
+    icon: BookOpen,
+    title: 'Personalized Learning Paths',
+    description: 'Curate customized learning strategies with personalized projects and mentor connections. Build skills systematically aligned with your career goals.',
+    features: ['Custom Curriculum', 'Project Portfolio', 'Mentor Matching', 'Progress Tracking'],
     color: 'from-orange-500 to-orange-600',
   },
   {
     icon: Award,
-    title: 'Executive Coaching',
-    description: 'C-suite and senior leadership coaching for career advancement, leadership development, and strategic career planning.',
-    features: ['Leadership Development', 'Board Positioning', 'Executive Presence', 'Succession Planning'],
+    title: 'Personal Branding with AI',
+    description: 'Build credibility and visibility through AI-driven projects and content. Position yourself as an AI-savvy professional in your industry.',
+    features: ['AI Project Showcase', 'Content Strategy', 'Professional Visibility', 'Thought Leadership'],
     color: 'from-teal-500 to-teal-600',
   },
   {
-    icon: Globe,
-    title: 'H1B Sponsorship & Guidance',
-    description: 'Navigate the H1B visa process with confidence. We help you target H1B-friendly companies and prepare strong applications.',
-    features: ['Sponsor Database Access', 'Application Guidance', 'Timeline Planning', 'Documentation Review'],
+    icon: Lightbulb,
+    title: 'Career & Strengths Assessment',
+    description: 'Deep dive into your skills, gaps, and goals with comprehensive assessments. Understand the impact of AI on your role and industry to make informed decisions.',
+    features: ['Skills Inventory', 'Gap Analysis', 'Goal Setting', 'AI Impact Review'],
     color: 'from-orange-500 to-orange-600',
   },
 ];
@@ -62,10 +62,10 @@ export default function Services() {
       <section className="bg-gradient-to-br from-slate-400 via-slate-800 to-slate-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Our Services
+            AI Career Services
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Comprehensive career services designed to accelerate your professional growth and help you achieve your goals
+            Comprehensive AI-powered career guidance to help you transform your career without starting over
           </p>
         </div>
       </section>
@@ -117,10 +117,10 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-12 text-center text-white">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to Get Started?
+              Ready to Transform Your Career with AI?
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Schedule a free consultation to discuss your career goals and how we can help you achieve them
+              Schedule a free consultation to discover how AI can enhance your career path and unlock new opportunities
             </p>
             <Link
               to="/contact"
