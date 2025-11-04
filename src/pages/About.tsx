@@ -1,5 +1,6 @@
 import { Award, Users, Target, TrendingUp, CheckCircle, Star } from 'lucide-react';
 import { useEffect } from 'react';
+import ParticlesBackground from "@/components/ParticlesBackground";
 const testimonials = [
   {
     name: 'Sarah Mitchell',
@@ -45,7 +46,7 @@ export default function About() {
     }, []);
   return (
     <div className="min-h-screen pt-20">
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
+      <section className="bg-gradient-to-br from-slate-400 via-slate-800 to-slate-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>

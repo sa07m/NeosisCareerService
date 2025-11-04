@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
 import { useEffect } from 'react';
+import ParticlesBackground from "@/components/ParticlesBackground";
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -31,9 +32,15 @@ export default function Contact() {
     }, []);
   return (
     <div className="min-h-screen pt-20">
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
+      <section className="bg-gradient-to-br from-slate-400 via-slate-800 to-slate-900 text-white py-20"
+      style={{
+    backgroundImage: "linear-gradient(rgba(30, 41, 59, 0.7), rgba(30, 41, 59, 0.7)), url('/image4.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center top",
+    backgroundRepeat: "no-repeat",
+  }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 tracking-tight">
             Get In Touch
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
@@ -57,8 +64,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
-                      <p className="text-gray-600">info@careerpro.com</p>
-                      <p className="text-gray-600">support@careerpro.com</p>
+                      <p className="text-gray-600">info@neosisitsolutions.com</p>
+                      <p className="text-gray-600">support@neosisitsolutions.com</p>
                     </div>
                   </div>
 
@@ -79,8 +86,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-slate-900 mb-1">Office</h3>
-                      <p className="text-gray-600">123 Career Avenue</p>
-                      <p className="text-gray-600">New York, NY 10001</p>
+                      <p className="text-gray-600">1300 Greenbrook Blvd</p>
+                      <p className="text-gray-600">Hanover Park, IL 60133</p>
                     </div>
                   </div>
 
@@ -186,28 +193,7 @@ export default function Contact() {
                         />
                       </div>
 
-                      <div>
-                        <label htmlFor="service" className="block text-sm font-semibold text-slate-900 mb-2">
-                          Service Interested In *
-                        </label>
-                        <select
-                          id="service"
-                          name="service"
-                          value={formData.service}
-                          onChange={handleChange}
-                          required
-                          className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all bg-white"
-                        >
-                          <option value="">Select a service</option>
-                          <option value="resume">Resume Writing</option>
-                          <option value="linkedin">LinkedIn Optimization</option>
-                          <option value="interview">Interview Coaching</option>
-                          <option value="counseling">Career Counseling</option>
-                          <option value="jobsearch">Job Search Strategy</option>
-                          <option value="executive">Executive Coaching</option>
-                          <option value="h1b">H1B Sponsorship Guidance</option>
-                        </select>
-                      </div>
+                      
                     </div>
 
                     <div>
@@ -250,7 +236,7 @@ export default function Contact() {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="h-16 w-16 text-slate-400 mx-auto mb-4" />
-                <p className="text-slate-600 font-semibold">123 Career Avenue, New York, NY 10001</p>
+                <p className="text-slate-600 font-semibold">1300 Greenbrook Blvd, Hanover Park, IL 60133</p>
                 <p className="text-slate-500 text-sm mt-2">Map integration available</p>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import { BookOpen, Download, TrendingUp, Users, Briefcase, Target, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import ParticlesBackground from "@/components/ParticlesBackground";
 const blogPosts = [
   {
     title: '10 Resume Mistakes That Cost You Interviews',
@@ -91,7 +92,7 @@ export default function Resources() {
     }, []);
   return (
     <div className="min-h-screen pt-20">
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
+      <section className="bg-gradient-to-br from-slate-400 via-slate-800 to-slate-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Career Resources

@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, TrendingUp, Target, Award, Users, CheckCircle, Brain, Zap } from 'lucide-react';
+import { ArrowRight, TrendingUp, Target, Award, Users, CheckCircle, Brain, Zap, Wallet } from 'lucide-react';
 import { useEffect } from 'react';
+
 export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div className="min-h-screen">
-      <section className="relative bg-slate-900 text-white pt-32 pb-20 overflow-hidden"
+      <section className="relative bg-slate-900 text-white pt-32 pb-10 overflow-hidden"
   style={{
     backgroundImage: "linear-gradient(rgba(30, 41, 59, 0.7), rgba(30, 41, 59, 0.7)), url('/image1.png')",
     backgroundSize: "cover",
@@ -42,10 +43,10 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link
-                  to="/contact"
-                  className="group px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center"
+                  to="/payment"
+                  className="group px-8 py-4 bg-gradient-to-r from-orange-500 to-amber-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center"
                 >
-                  Schedule Free Consultation
+                  Get Started
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
@@ -57,7 +58,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="grid grid-cols-2 gap-6">
               <div className="bg-gradient-to-br from-orange-500/20 to-teal-500/20 backdrop-blur-xl rounded-2xl p-8 border border-white/10 shadow-2xl">
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4 bg-white/10 p-4 rounded-lg backdrop-blur-sm">
@@ -69,6 +70,10 @@ export default function Home() {
                       <div className="text-gray-300 text-sm">Success Rate</div>
                     </div>
                   </div>
+                  </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-orange-500/20 to-teal-500/20 backdrop-blur-xl rounded-2xl p-8 border border-white/10 shadow-2xl">
+                <div className="space-y-6">
                   <div className="flex items-center space-x-4 bg-white/10 p-4 rounded-lg backdrop-blur-sm">
                     <div className="bg-gradient-to-br from-teal-500 to-teal-600 p-3 rounded-lg">
                       <Users className="h-6 w-6" />
@@ -78,8 +83,12 @@ export default function Home() {
                       <div className="text-gray-300 text-sm">Clients Served</div>
                     </div>
                   </div>
+                  </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-orange-500/20 to-teal-500/20 backdrop-blur-xl rounded-2xl p-8 border border-white/10 shadow-2xl">
+                <div className="space-y-6">
                   <div className="flex items-center space-x-4 bg-white/10 p-4 rounded-lg backdrop-blur-sm">
-                    <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-3 rounded-lg">
+                    <div className="bg-gradient-to-br from-teal-500 to-teal-600 p-3 rounded-lg">
                       <Award className="h-6 w-6" />
                     </div>
                     <div>
@@ -87,11 +96,94 @@ export default function Home() {
                       <div className="text-gray-300 text-sm">Experience</div>
                     </div>
                   </div>
+                  </div>
+                  </div>
+                  <div className="bg-gradient-to-br from-orange-500/20 to-teal-500/20 backdrop-blur-xl rounded-2xl p-8 border border-white/10 shadow-2xl">
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4 bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                    <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-3 rounded-lg">
+                      <Wallet className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold">35%</div>
+                      <div className="text-gray-300 text-sm">Avg Salary hike</div>
+                    </div>
+                  </div>
+                </div>
+                </div>
                 </div>
               </div>
+              
             </div>
-          </div>
-        </div>
+          <div className="relative w-full overflow-hidden pt-20">
+  {/* Scroll container */}
+  <div className="flex animate-scroll space-x-12">
+    {[
+  "NMDC ENERGY PJSC",
+  "Imtiaz Real Estate Investment & Development LLC",
+  "INNOVATION DIRECT EMPLOYMENT SERVICES L.L.C",
+  "Archirodon Construction (Overseas) Company Limited",
+  "NMC ASSETCO LIMITED",
+  "DSV Air and SEA DWC-LLC",
+  "K B C TECHNOLOGIES L.L.C",
+  "SPIE ENERGY SERVICES LTD",
+  "Maandag Interim Professionals B.V.",
+  "ZULEKHA HOSPITAL LLC",
+  "UBS Business Solutions AG",
+  "SHARJAH AGRICULTURAL AND LIVESTOCK PRODUCTION EST (EKTIFA)",
+  "ANCIENT BUILDERS CONSTRUCTIONS LLC",
+  "Gulf Medical University L.L.C",
+  "TARRAD REAL ESTATE DEVELOPMENT L.L.C",
+  "Hamad International Airport",
+  "DUNCAN AND ROSS MANAGEMENT CONSULTANCIES",
+  "Wipro Limited",
+  "SUNDUS MANAGEMENT CONSULTANCY & STUDIES BUREAU L.L.C",
+  "Innovo Build LLC",
+  "Salam Technology",
+  "Apparel FZCO",
+  "Binghatti Development L.L.C",
+  "Sharaf Investment L.L.C",
+  "MPH CONSULTING SERVICES JLT",
+  "Robt Stone (ME) LLC",
+  "Air Products (Middle East) FZE",
+  "Trojan Construction Group – SP LLC",
+  "Almarai Company",
+  "Raqmiyat L.L.C",
+  "Reportage Real Estate",
+  "SAFEEN SURVEY AND SUBSEA SERVICES L.L.C",
+  "Teleperformance Global Services FZ-LLC"
+
+    ].map((company) => (
+      <div
+        key={company}
+        className="bg-teal-700/60 text-white px-8 py-4 rounded-xl border border-pink-500 shadow-lg text-lg font-semibold min-w-[180px] text-center"
+      >
+        {company}
+      </div>
+    ))}
+    {/* Duplicate the list once for seamless loop */}
+    {[
+      "Google",
+      "Microsoft",
+      "Amazon",
+      "Tesla",
+      "IBM",
+      "Adobe",
+      "Meta",
+      "Netflix",
+      "Oracle",
+      "Salesforce",
+    ].map((company, index) => (
+      <div
+        key={`${company}-dup-${index}`}
+        className="bg-teal-700/60 text-white px-8 py-4 rounded-xl border border-white/10 shadow-lg text-lg font-semibold min-w-[180px] text-center"
+      >
+        {company}
+      </div>
+    ))}
+  </div>
+</div>
+
         
       </section>
       
@@ -179,6 +271,61 @@ export default function Home() {
     </div>
   </div>
 </section>
+        <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+              Our Credentials
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Industry-recognized certifications and expertise you can trust
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-br from-slate-300 to-white p-8 rounded-2xl border shadow-md border-l-4 border-cyan-500 hover:shadow-xl transition-all">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-6">Certifications & Memberships</h3>
+                <ul className="space-y-4">
+                  {[
+                    'Certified Professional Resume Writer (CPRW)',
+                    'National Career Development Association (NCDA)',
+                    'International Coach Federation (ICF) Certified',
+                    'Society for Human Resource Management (SHRM)',
+                    'LinkedIn Certified Professional',
+                    'Career Thought Leaders Consortium Member',
+                  ].map((item) => (
+                    <li key={item} className="flex items-start space-x-3">
+                      <CheckCircle className="h-6 w-6 text-orange-500 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-6">Industries We Serve</h3>
+                <ul className="space-y-4">
+                  {[
+                    'Technology & Software',
+                    'Finance & Banking',
+                    'Healthcare & Pharmaceuticals',
+                    'Marketing & Advertising',
+                    'Consulting & Professional Services',
+                    'Engineering & Manufacturing',
+                    'And many more...',
+                  ].map((item) => (
+                    <li key={item} className="flex items-start space-x-3">
+                      <CheckCircle className="h-6 w-6 text-teal-500 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -205,15 +352,17 @@ export default function Home() {
                 ))}
               </ul>
               <Link
-                to="/contact"
+                to="/payment"
                 className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 Get Started Today
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
+              
             </div>
 
-            <div className="bg-gradient-to-br from-slate-50 to-white p-8 rounded-2xl border border-slate-200 shadow-xl">
+            <div className="bg-gradient-to-br from-slate-300 to-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
+            
               <div className="space-y-6">
                 <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-orange-500">
                   <div className="flex items-center justify-between mb-2">
@@ -244,164 +393,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            
           </div>
+          
         </div>
       </section>
-      {/* Pricing */}
-      <section className="py-20 bg-gradient-to-br from-white via-teal-700 to-orange-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Choose Your AI Career Path</h2>
-            <p className="text-xl text-gray-600">From explorers to seasoned professionals - transform your career with AI</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Starter */}
-            <div className="bg-gradient-to-br from-slate-500 to-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
-              <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-4 rounded-xl inline-block mb-6">
-                <Target className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">Explorer</h3>
-              <p className="text-4xl font-bold text-slate-900 mb-2">$299</p>
-              <p className="text-gray-600 mb-6">For freshers exploring AI careers</p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Career & strengths assessment</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>AI career pathways planning</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>AI tools introduction</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Skills & certifications roadmap</span>
-                </li>
-              </ul>
-              <a 
-                href="https://buy.stripe.com/test_dRmdR88fCdtegkF0V34ko03" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full text-center px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
-              >
-                Get Started →
-              </a>
-            </div>
-
-            {/* Professional - Most Popular */}
-            <div className="bg-gradient-to-br from-slate-500 to-white p-8 rounded-2xl border-2 border-orange-500 hover:shadow-2xl transition-all relative transform scale-105">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                  Most Popular
-                </div>
-              </div>
-              <div className="bg-gradient-to-br from-teal-500 to-teal-600 p-4 rounded-xl inline-block mb-6">
-                <Award className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">Professional</h3>
-              <p className="text-4xl font-bold text-slate-900 mb-2">$799</p>
-              <p className="text-gray-600 mb-6">For seasoned pros advancing with AI</p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>AI awareness & application review</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>AI accelerators for automation</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Personalized learning strategy</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>AI-driven project guidance</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Personal branding with AI</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Ongoing mentorship</span>
-                </li>
-              </ul>
-              <a 
-                href="https://buy.stripe.com/test_5kQ14mdzWah23xTfPX4ko01" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full text-center px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
-              >
-                Get Started →
-              </a>
-            </div>
-
-            {/* Executive */}
-            <div className="bg-gradient-to-br from-slate-500 to-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all">
-              <div className="bg-gradient-to-br from-orange-500 to-orange-600 p-4 rounded-xl inline-block mb-6">
-                <Award className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">Leader</h3>
-              <p className="text-4xl font-bold text-slate-900 mb-2">$1,999</p>
-              <p className="text-gray-600 mb-6">For executives becoming AI leaders</p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Strategic AI integration planning</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Leadership repositioning strategy</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>AI executive presence building</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Industry visibility & credibility</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>Unlimited 1-on-1 coaching</span>
-                </li>
-                <li className="flex items-start gap-2 text-gray-700">
-                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                  <span>90-day transformation support</span>
-                </li>
-              </ul>
-              <a 
-                href="https://buy.stripe.com/test_5kQ6oGeE0fBm2tPdHP4ko02" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full text-center px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
-              >
-                Get Started →
-              </a>
-            </div>
-          </div>
-
-          <div className="mt-12 bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 border border-slate-200">
-            <div className="flex items-center gap-3 text-gray-700 mb-3">
-              <CheckCircle className="w-5 h-5 text-orange-500" />
-              <span>All plans include satisfaction guarantee and unlimited revisions</span>
-            </div>
-            <div className="flex items-center gap-3 text-gray-700 mb-3">
-              <CheckCircle className="w-5 h-5 text-orange-500" />
-              <span>Free consultation to determine the best plan for you</span>
-            </div>
-            <div className="flex items-center gap-3 text-gray-700">
-              <CheckCircle className="w-5 h-5 text-orange-500" />
-              <span>Flexible payment plans available</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 }
